@@ -22,6 +22,10 @@ public class CydeoApplication {
 
         commentService.printConfigData();
 
+        System.out.println("------------------------");
+
+        commentService.printDbData();
+
     }
 
 
