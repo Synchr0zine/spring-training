@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Welcome</title>
@@ -8,6 +8,10 @@
 
 <h2>Welcome Student!</h2>
 
+<!--Fragments-->
+
+<div th:replace="/fragments/index :: footer-menu"></div>
+<div th:replace="/fragments/index :: main-menu"></div>
 
 </body>
 </html>
