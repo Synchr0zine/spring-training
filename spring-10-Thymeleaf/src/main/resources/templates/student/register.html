@@ -21,8 +21,14 @@
 </h2>
 
 <h2>
-<!--Relative Link-->
+    <!--Relative Link-->
     <a th:href="@{/student/welcome}">Welcome Page</a>
 </h2>
+
+<!--Adding Parameters in link-->
+<h2>
+    <a th:href="@{/student/welcome(id=3)}">Link</a>
+</h2>
+
 </body>
 </html>
