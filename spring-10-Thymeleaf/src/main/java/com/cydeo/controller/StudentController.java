@@ -15,4 +15,11 @@ public class StudentController {
         model.addAttribute("students", DataGenerator.createStudent());
         return "student/register";
     }
+
+    @RequestMapping("/welcome")
+    public String welcome(Model model){
+
+        model.addAttribute("students", DataGenerator.createStudent());
+        return "student/welcome";
+    }
 }

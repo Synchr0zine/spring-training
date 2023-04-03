@@ -14,7 +14,15 @@
 <h2 th:text="${'Hello '+students.get(0).getFirstName()}"></h2>
 <h2 th:text="${students.get(0).getFirstName()+' '+students.get(0).getLastName()}"></h2>
 
+<!--Linking URLs-->
+<h2>
+    <!--Absolute Link-->
+<a th:href="@{https://cydeo.com}">Cydeo Page</a>
+</h2>
 
-
+<h2>
+<!--Relative Link-->
+    <a th:href="@{/student/welcome}">Welcome Page</a>
+</h2>
 </body>
 </html>
