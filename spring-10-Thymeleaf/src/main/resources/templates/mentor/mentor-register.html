@@ -10,7 +10,7 @@
 
     <h1>Mentor Registration</h1>
 
-    <form th:object="${mentor}">
+    <form th:action="@{/mentor/confirm}" method="post" th:object="${mentor}">
 
         <label>First Name:
             <input th:field="*{firstName}" type="text"><br>
