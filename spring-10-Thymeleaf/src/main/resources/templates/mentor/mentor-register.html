@@ -7,13 +7,42 @@
 <body>
 
 <div align="center">
+
+    <h1>Mentor Registration</h1>
+
     <form th:object="${mentor}">
 
-        <label >First Name:</label>
-        <input th:field="*{firstName}" type="text"><br>
+        <label>First Name:
+            <input th:field="*{firstName}" type="text"><br>
+        </label>
 
-        <label>Last Name:</label>
-        <input th:field="*{lastName}" type="text"><br>
+        <label>Last Name:
+            <input th:field="*{lastName}" type="text"><br>
+        </label>
+
+        <label>Email:
+            <input th:field="*{email}" type="email"><br>
+        </label>
+
+        <label>Graduated:
+            <input th:field="*{graduated}" type="checkbox"><br>
+        </label>
+
+        <label>Gender:
+            <input th:field="*{gender}" type="radio" value="Male">Male
+            <input th:field="*{gender}" type="radio" value="Female">Female<br>
+        </label>
+
+        <label>Batch Number:
+            <select th:field="*{batch}">
+                <option th:each="theBatch: ${batchList}" th:value="${theBatch}" th:text="${theBatch}"></option>
+            </select></label><br>
+
+        <label>Company:
+            <textarea th:field="*{company}"></textarea><br>
+        </label>
+
+        <button type="submit">Register</button>
 
     </form>
 
